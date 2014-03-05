@@ -1,63 +1,107 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Duc Nhan</title>
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
+    <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more." />
+    
+    <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com" />
+    <meta name="copyright" content="ZURB, inc. Copyright (c) 2013" />
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/component.css" />
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <div class="cbp-af-header">
-      <div class="cbp-af-inner">
-        <div class="ido-code-body"><pre><div class="line" id="LC1"><span class="k strike">if</span> <span class="p">(</span><span class="nx">I</span> <span class="nx strike">did</span> <span class="k">do</span><span class="p">)</span> <span class="p">{</span></div><div class="line" id="LC2">&nbsp;&nbsp;<span class="nx">I</span> <span class="nx">done</span><span class="p">;</span></div><div class="line" id="LC3"><span class="p">}</span></div></pre></div>
-        <div class="ido-quote hidden">I DO, I DONE</div>
-        <nav>
-          <a href="#">Le Duc Nhan</a>
-        </nav>
-      </div>
-    </div>
     
-    <div class="container">
 
-      <div class="main">
-        <section>Demons - Imagine Dragons</section>
-        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-        <div id="player"></div>
+<!-- Nav Bar -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="nav-bar right">
+        <h1>Le Duc Nhan</h1>
       </div>
+      <h1>I do, I done</h1>
+      <hr />
+    </div>
+  </div>
+
+  <!-- End Nav -->
+
+
+  <!-- Main Page Content and Sidebar -->
+
+  <div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-12 columns" role="content">
+
+      <article>
+
+        <h3><a href="#">Demons</a></h3>
+        <h6>Song by <a href="#">Imagine Dragons</a></h6>
+
+        <div class="row">
+
+          <div class="large-7 medium-7 columns">
+            <style>.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/mWRsgZuwf_8?enablejsapi=1' frameborder='0' allowfullscreen id="player"></iframe></div>
+          </div>
+
+          <div class="large-5 medium-5 columns">
+            <div id="ido-lyric" style="">
+              <div id="karaoke-wrapper">
+                <div id="karaoke-display">
+                  <div class="karaoke-display karaoke-type-karaoke">
+                    <div class="karaoke-line">&nbsp;</div>
+                  </div>
+                  <div class="karaoke-display karaoke-type-karaoke">
+                    <div class="karaoke-line">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </article>
+
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/idoAnimatedHeader.js"></script>
-    <script src="js/ido-youtube.js"></script>
+    <!-- End Main Content -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  </div>
+
+  <!-- End Main Content and Sidebar -->
+
+
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>Bring you here because Nhan do, Nhan done.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
     </script>
+    <script src="js/ricekaraoke.js"></script>
+    <script src="js/simplekaraokedisplay.js"></script>
+    <script src="js/ido-youtube-lyric.js"></script>
   </body>
 </html>
