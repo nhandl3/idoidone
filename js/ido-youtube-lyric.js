@@ -47,7 +47,7 @@ var numDisplayLines = 2; // Number of lines to do the karaoke with
 var timings = [
 [12,15,[[0,"When the days are cold"]]],
 [15,17,[[0,"And the cards all fold"]]],
-[18,20,[[0,"And the saints we see"]]],
+[17,20,[[0,"And the saints we see"]]],
 [20,22,[[0,"Are all made of gold"]]],
 [23,25,[[0,"When your dreams all fail"]]],
 [25,28,[[0,"And the ones we hail"]]],
