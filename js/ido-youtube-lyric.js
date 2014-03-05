@@ -123,7 +123,9 @@ function init() {
 function updatePlayerInfo() {
   if (player.getPlayerState() == YT.PlayerState.PLAYING) {
     show.render(player.getCurrentTime(), false);
-  } else {
+  } else if ((player.getPlayerState() != YT.PlayerState.PAUSED) 
+              && (player.getPlayerState() != YT.PlayerState.BUFFERING))
+  {
     show.reset();
   }
 }
