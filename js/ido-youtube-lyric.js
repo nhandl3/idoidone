@@ -111,7 +111,7 @@ var timings = [
 [181,184,[[0,"It’s where my demons hide"]]]];
 
 var show = null;
-var current = 0;
+var previousPosition = 0;
 
 function init() {
     // Create the karaoke engine and get a show instance
@@ -121,13 +121,18 @@ function init() {
 }
 
 function updatePlayerInfo() {
-  if (player.getPlayerState() == YT.PlayerState.PLAYING) {
+  currentPosition = player.getCurrentTime();
+  if ((player.getPlayerState() == YT.PlayerState.PLAYING)
+      && (currentPosition > previousPosition))
+  {
     show.render(player.getCurrentTime(), false);
-  } else if ((player.getPlayerState() != YT.PlayerState.PAUSED) 
-              && (player.getPlayerState() != YT.PlayerState.BUFFERING))
+  } 
+  else if ((player.getPlayerState() != YT.PlayerState.PAUSED) 
+           && (player.getPlayerState() != YT.PlayerState.BUFFERING))
   {
     show.reset();
   }
+  previousPosition = currentPosition;
 }
 
 init();
