@@ -1,0 +1,10 @@
+{
+	"globals": {
+		"name"  : "Nhan Le Duc",
+		"uri"   : "http://idoidone.com",
+		"division": " &ndash; ",
+		"description": "I do, I done",
+		"continue" : "More&hellip;",
+		"analytics": "UA-49249688-1"
+	}
+}

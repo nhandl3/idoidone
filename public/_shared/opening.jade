@@ -1,0 +1,13 @@
+if current.path[0] === "portfolio" && current.path[1] != "index"
+	for project, slug in public.portfolio._data
+		if project.banner && current.path[1] === slug
+			for image, filename in project.images
+				if filename === project.banner
+					div(class="#{ image.format==='jpg'?'opening-wide':'opening' }")
+						img.opening-image(src="/images/#{ slug }/#{ filename }", alt="#{ image.alt!=false?image.alt:'' }", title="#{ image.title!=false?image.title:'' }")
+						header.opening-header
+							.opening-container
+								if image.format === 'svg' || image.format === 'png'
+									h1(class="hidden opening-title") #{ project.name }
+								else
+									h1(class="opening-title") #{ project.name }
