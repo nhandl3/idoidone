@@ -7,4 +7,6 @@
   Components: jQuery, Orbit, Reveal
   Software: Sublime, Git, Sass
 
+/* TEST GITHUB EDIT */
+
 /* TEST LOCAL CHANGE */
