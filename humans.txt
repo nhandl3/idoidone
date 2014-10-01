@@ -16,3 +16,5 @@
 /* TEST GITHUB EDIT 3nd, External contributor*/
 
 /* TEST GITHUB EDIT 4nd, Collborator*/
+
+/* TEST commit amend: initialize (amend)*/
